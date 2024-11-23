@@ -15,6 +15,9 @@ module Market
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w[assets tasks])
+    config.eager_load_paths << Rails.root.join('lib')
+    #  config.eager_load_paths means that means it will loads all the specified files at start 
+    # and now we will add lib(custom modules) to the eager_load_paths by using the <<(appending) 
 
     # Configuration for the application, engines, and railties goes here.
     #

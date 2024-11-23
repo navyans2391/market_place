@@ -49,3 +49,7 @@ group :development, :test do
 end
 
 
+
+gem "jwt", "~> 2.9"
+#  the libary is very simple it has only two methods JWT.encode and JWT.decode
+
