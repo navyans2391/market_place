@@ -6,4 +6,6 @@ class User < ApplicationRecord
     #  it will offer mehtod ActiveModel::SecurePassword::has_secure_password
     #  it will crack the password for us
     has_secure_password
+
+    has_many :products, dependent: :destroy
 end

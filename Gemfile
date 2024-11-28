@@ -53,3 +53,7 @@ end
 gem "jwt", "~> 2.9"
 #  the libary is very simple it has only two methods JWT.encode and JWT.decode
 
+
+gem "faker", "~> 3.5"
+
+gem "fast_jsonapi", "~> 1.5"
